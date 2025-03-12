@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sweet days</title>
+ <meta charset = " UTF-8">
+ <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+ <meta http-equiv = "X-UA-Compatible" content="ie=edge">
+<!--<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>  icone de box-->
+<link rel="stylesheet" href="css/style.css">
+<link rel="shortcout icon" href="https://github.com/valeriaanunez/sweetdays/blob/main/warm_icon.png?raw=true" type ="">
+ <!-- icone del head abejita-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head> 
+<body>
+  <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.titulo{
+color: #9d8189;
+font-size: 60px;
+text-align: center;
+margin-bottom: 60px;
+}
+
+body {
+    font-family: 'open sans';
+}
+.contenedor{
+    padding: 60px;
+    width: 90% ;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+header{
+ width: 100%; 
+ height: 600px;
+ background: #BA5370;  
+background: -webkit-linear-gradient(to right, #f4e2d8af, #ba5370b0), url(../img/otroheader.jpg);
+background: linear-gradient(to right, #f4e2d8af, #ba5370b0), url(../img/otroheader.jpg);
+background-size: cover;
+background-attachment: fixed;
+position: relative; 
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a {
+ color:#fff;
+ font-weight: 300px;
+ text-decoration: none;
+ margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+   display: flex;
+   height: 230px; 
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   /*pq no se centraba*/
+
+
+}
+
+.textos-header h1{
+    font-size: 70px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 60px;
+    font-weight: 300px;
+    color: #fff;
+}
+
+.wave{
+    position:absolute;
+    top: 270px;
+    bottom: 0px;
+    width: 100%;
+    
+
+    /*aqui weight para modificar el esapcio ese q esta molestando*/
+}
+ /*ABOUT US*/
+ .contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;/*q resparta el espacio equitativamente*/ 
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+
+/*el circulito de enumeracion*/
+.contenido-textos h3{
+    margin-bottom: 15px;
+
+}
+
+.contenido-textos h3 span{
+    background: #fb6f92;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0  6px rgba(0, 0, 0, .5) ;
+    padding: 2px;
+    margin-right: 5px;
+    margin-left: 20px;
+    /*arreglo*/
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px; 
+
+}
+
+.contenido-textos p{
+   /* padding: 0px 0px 3px 15px;*/
+    font-weight: 300px;
+    text-align: justify ;
+    padding: 20px; /* Espacio dentro del contenedor */
+    border: 1px solid rgba(0, 0, 0, 0); /* Solo para visualizar el borde */
+}
+
+/*galeria*/
+.portafolio{
+    background: #e0e1dd;
+}
+
+.galeria-port{
+  display: flex; /*maneja el espacio*/
+  justify-content: space-evenly;
+  flex-wrap:wrap;/*hace q no se juntes todas la imgs*/
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom:10px;
+    height: 200px ;
+    overflow: hidden;
+    position: relative; 
+    overflow: pointer;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.5);
+}
+
+.imagen-port > img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+   
+    transform: scale(0);
+    background:  hsla(300, 36%, 74%, 0.505);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+footer{
+    background: #a3b18a;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+display: flex; /*se desordena*/
+width: 90%;
+justify-content: space-evenly;
+margin:auto;
+padding-bottom: 50px; /*sin esto se pega los textos*/
+border-bottom: 1px solid;
+}
+
+.contenedor-footer{
+    text-align: center;
+
+}
+
+.contenedor-footer h4 {
+    color: #000;
+    border-bottom: 3px solid #588157 ;
+    padding-bottom: 5px;
+    margin-bottom:10px;
+}
+
+.contenedor-footer p{
+    color: #415a77;
+}
+
+.titulo-final{
+    margin: auto;
+text-align: center;
+font-size: 24px;
+margin : 20px 0 0 0;
+color: #3a5a40
+
+}
+  </style>
+  <header>
+    
+    <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#acerca">Acerca de</a>
+    <a href="#menu">Menu</a>
+    <a href="#footer">footer</a>
+    </nav>
+
+    <div class="textos-header">
+    <h1>sweet days</h1>
+    <h2>El Arte de Cocinar</h2>
+    </div>
+    <div class="wave"> 
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L80,80C160,96,320,128,480,122.7C640,117,800,75,960,85.3C1120,96,1280,160,1360,192L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>  
+  </header>
+    </div>
+  </section>
+  <main>
+    <section class="contenedorsobre-nosotros">
+      <h2 class = "titulo">El Libro Que Cambiar&aacute; Tu Paladar</h2>
+      <div class ="contenedor-sobre-nosotros">
+        <img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/3.jpg" alt="" class="imagen-about-us">
+        <div class="contenido-textos">
+            <h3> <span> 1</span> Recetas Exclusivas y Fáciles</h3>
+            <p>Este libro te ofrece una colección única de recetas de postres que combinan lo mejor de la repostería tradicional
+               con toques modernos y creativos. Cada receta está explicada paso a paso, con instrucciones claras y fáciles de seguir,
+                para que cualquier persona, desde principiantes hasta expertos en la cocina, pueda recrearlas sin complicaciones. Además, 
+                todos los ingredientes son accesibles y
+               están detallados con medidas exactas para garantizar que obtengas siempre el mejor resultado.
+            <h3><span> 2</span> Satisfacción Garantizada</h3>
+            <p>No hay nada mejor que disfrutar de un postre casero que tenga el equilibrio perfecto entre sabor, 
+              textura y presentación. Todas las recetas de este libro han sido cuidadosamente seleccionadas y 
+              probadas para asegurar que cada postre que prepares sea un éxito rotundo. 
+              Desde cremosos cheesecakes hasta suaves brownies y crujientes galletas, este libro te ayudará a sorprender a tu familia y 
+              amigos con creaciones irresistibles que deleitarán todos los sentidos.</p>
+
+          </div>
+        </div>
+
+        <section class="portafolio">
+          <div class="contenedor">
+            <h2 class="titulo">Men&uacute;</h2>
+
+            <div class="galeria-port">
+              
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/1.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+                  <img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                  <!--poner el nombre de cada receta si se puede-->
+                </div>
+              </div>
+        
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/2.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+                  <img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                </div>
+              </div>
+        
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/arandanos.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+                  <img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                </div>
+              </div>
+        
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/4.2.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+                  <img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                </div>
+              </div>
+        
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/5.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+                  <img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                </div>
+              </div>
+        
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/6.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+                  <img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                </div>
+              </div>
+        
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/7.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+                  <img src="img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                </div>
+              </div>
+        
+              <div class="imagen-port">
+                <img src="https://github.com/valeriaanunez/sweetdays/blob/main/8.jpg?raw=true" alt="">
+                <div class="hover-galeria">
+<img src="https://raw.githubusercontent.com/valeriaanunez/sweetdays/5f0d8ce0f7afd434689a640a714d704ffea9572d/pagina%20web%20pr%C3%A1ctica/img/fork.svg" alt=""> 
+                  <p>Receta a encontrar</p>
+                </div>
+              </div>
+        
+            </div> <!-- Cierre correcto de .galeria-port -->
+          </div> <!-- Cierre correcto de .contenedor -->
+        </section> <!-- Cierre correcto del section -->
+  </main>
+<footer>
+  <div class="contenedor-footer">
+    <div class="content-foo">
+    <h4>Librerias Disponibles</h4>
+    <p>Don Quijote</p>
+    </div>
+    <div class="content-foo">
+      <h4>Telefono</h4>
+      <p>504 9945-3113</p>
+      </div>
+      <div class="content-foo">
+        <h4>Email</h4>
+        <p>sweetdays@gmail.com</p>
+        </div>
+  </div>
+   <h2c class="titulo-final">&copy; Vale design </h2>
+</footer>
+</body>
+</html> 
